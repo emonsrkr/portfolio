@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emon Sarkar Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans overflow-x-hidden pt-20">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-400 text-white fixed top-0 left-0 w-full z-50 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
+      <div class="text-2xl font-bold">Emon Sarkar</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#hero" class="hover:text-blue-200 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+      </ul>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-blue-400 text-white w-full md:hidden">
+    <ul class="flex flex-col space-y-2 px-4 py-2">
+      <li><a href="#hero" class="block py-2 hover:text-blue-200">Home</a></li>
+      <li><a href="#about" class="block py-2 hover:text-blue-200">About</a></li>
+      <li><a href="#skills" class="block py-2 hover:text-blue-200">Skills</a></li>
+      <li><a href="#projects" class="block py-2 hover:text-blue-200">Projects</a></li>
+      <li><a href="#contact" class="block py-2 hover:text-blue-200">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-20 rounded-xl shadow-lg bg-gradient-to-b from-blue-100 to-blue-50 opacity-0 translate-y-10 section">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600 mb-4">Hi, I'm Emon Sarkar</h1>
+      <p class="text-lg sm:text-xl mb-6">A passionate Software Engineer & Developer</p>
+      <a href="#projects" class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:shadow-xl inline-block">View My Work</a>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img src="profile.png.png" alt="Emon Portfolio" class="rounded-xl shadow-lg max-w-full hover:scale-105 transition-transform duration-500">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-16 md:py-20 px-4 md:px-20 bg-blue-50 rounded-xl shadow-lg my-10 opacity-0 translate-y-10 section hover:shadow-2xl hover:-translate-y-1 transition-transform duration-500">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-6">About Me</h2>
+      <p class="text-gray-700 mb-4">
+        I am a software engineer with experience in web development, machine learning, and computer vision. I enjoy creating interactive and responsive web applications using modern technologies.
+      </p>
+      <p class="text-gray-700">
+        My passion is to turn ideas into functional and aesthetically pleasing applications, constantly learning new tools and technologies along the way.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-16 md:py-20 px-4 md:px-20 bg-blue-100 rounded-xl shadow-lg my-10 opacity-0 translate-y-10 section">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-8 text-center">My Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 text-center transform hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">HTML</h3>
+          <p class="text-gray-600">Markup Language</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 text-center transform hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">CSS</h3>
+          <p class="text-gray-600">Styling & Design</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 text-center transform hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+          <p class="text-gray-600">Interactive Web</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 text-center transform hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">React.js</h3>
+          <p class="text-gray-600">Frontend Framework</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-16 md:py-20 px-4 md:px-20 bg-blue-50 rounded-xl shadow-lg my-10 opacity-0 translate-y-10 section">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-8 text-center">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow hover:shadow-2xl hover:-translate-y-1 transition-transform duration-300 transform hover:scale-105 p-6">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Online Learning Platform</h3>
+          <p class="text-gray-600 mb-4">A platform where users can buy and learn tech-related courses at their convenience.</p>
+          <a href="#" class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-300 transform hover:-translate-y-1 hover:shadow-xl inline-block">View Project</a>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-2xl hover:-translate-y-1 transition-transform duration-300 transform hover:scale-105 p-6">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Pen Tracking System</h3>
+          <p class="text-gray-600 mb-4">Inkless pen tracking using computer vision and a single camera for real-time writing capture.</p>
+          <a href="#" class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-300 transform hover:-translate-y-1 hover:shadow-xl inline-block">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-16 md:py-20 px-4 md:px-20 bg-blue-100 rounded-xl shadow-lg my-10 opacity-0 translate-y-10 section">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-8">Get In Touch</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        
+        <!-- Call / Phone -->
+        <a href="tel:+8801837248916" class="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transform hover:scale-105 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3 7-3 7H3V5z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 5h14v14H7V5z"/>
+          </svg>
+          <span class="font-semibold text-gray-800 mt-2">Call Me</span>
+          <span class="text-gray-600">+8801837248916</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:emonsrkr12@gmail.com" class="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transform hover:scale-105 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4"/>
+          </svg>
+          <span class="font-semibold text-gray-800 mt-2">Email Me</span>
+          <span class="text-gray-600">emonsrkr12@gmail.com</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/emonsrkr" target="_blank" class="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transform hover:scale-105 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400 mb-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.097 3.293 9.416 7.863 10.951.574.105.781-.25.781-.554 0-.272-.01-1.179-.016-2.145-3.197.696-3.874-1.54-3.874-1.54-.522-1.329-1.275-1.682-1.275-1.682-1.043-.713.08-.698.08-.698 1.152.081 1.757 1.184 1.757 1.184 1.025 1.756 2.69 1.249 3.344.955.104-.744.402-1.25.732-1.537-2.553-.292-5.236-1.277-5.236-5.684 0-1.256.448-2.282 1.184-3.086-.119-.293-.513-1.466.112-3.055 0 0 .964-.309 3.156 1.177a10.986 10.986 0 012.872-.387c.974.004 1.957.132 2.872.387 2.189-1.486 3.152-1.177 3.152-1.177.628 1.589.233 2.762.114 3.055.738.804 1.184 1.83 1.184 3.086 0 4.419-2.687 5.389-5.25 5.676.414.357.781 1.061.781 2.139 0 1.545-.014 2.794-.014 3.172 0 .308.203.664.789.551C20.708 21.412 24 17.095 24 12c0-6.352-5.148-11.5-12-11.5z"/>
+          </svg>
+          <span class="font-semibold text-gray-800 mt-2">GitHub</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/emonsrkr12" target="_blank" class="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transform hover:scale-105 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400 mb-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.892-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
+          </svg>
+          <span class="font-semibold text-gray-800 mt-2">Facebook</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
